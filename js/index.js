@@ -5,13 +5,13 @@ var oDiv_Nav_message
 $(document).ready(function() {
     $('#nav_3').on('mouseover', function() {
         $('#drop-nav').css('display', 'block')
-        $('#headingOne i').addClass('fa fa-chevron-down')
+        $('#inversion').addClass('fa fa-chevron-down')
     })
     $('#nav_3').on('mouseout', function() {
-        $('#headingOne i').removeClass()
+        $('#inversion').removeClass()
         $('#drop-nav').css('display', 'none')
             // $('#drop-nav li a').css('background-color', 'rgba(255, 255, 255, 0.8)')
-        $('#headingOne i').addClass('fa fa-chevron-up')
+        $('#inversion').addClass('fa fa-chevron-up')
     })
     $('#mymenu li').on('click', function() {
         $('#mymenu li').removeClass()
