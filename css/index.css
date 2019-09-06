@@ -370,7 +370,8 @@ html {
 }
 
 .focusMe .sect {
-    height: 80px;
+    height: 70px;
+    padding-top: 10px;
     display: flex;
     justify-content: center;
     background: rgba(245, 251, 255, 0.5);
@@ -412,11 +413,11 @@ html {
 
 .focusMe .sect .iconbtn {
     border: 4px solid rgba(255, 255, 255, 0.5);
-    color: rgba(245, 251, 255, 0.5);
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .focusMe .sect .iconbtn::after {
-    background: rgba(255, 255, 255, 0.5);
+    /* background: rgba(255, 255, 255, 0.6); */
     transition: 0.4s;
 }
 
@@ -510,6 +511,7 @@ html {
 
 .index-data ul li {
     width: 30%;
+    padding: 3px;
     float: left;
 }
 
@@ -560,7 +562,8 @@ html {
 .recentNew ul {
     list-style: none;
     background: rgba(245, 251, 255, 0.5);
-    margin-top: -10px
+    margin-top: -10px;
+    padding: 0%;
 }
 
 .recentNew li {
@@ -595,6 +598,7 @@ i {
     list-style: none;
     background: rgba(245, 251, 255, 0.5);
     margin-top: -10px;
+    padding: 0%;
 }
 
 .saying li {
@@ -688,7 +692,7 @@ i {
     margin: 0;
     padding: 0;
     text-align: justify;
-    line-height: 22px;
+    line-height: 25px;
     color: #515151;
     padding-bottom: 7px;
 }
@@ -712,7 +716,8 @@ i {
 }
 
 .hotSearch .hs-container a:nth-of-type(2) {
-    margin-left: 50%;
+    width: 50px;
+    float: right;
 }
 
 .pop-Rank {
@@ -840,6 +845,10 @@ i {
 .interact {
     background: rgba(255, 255, 255, 0.5);
 }
+.interact .time{
+    text-align: right;
+    font-size: 11px
+}
 
 .interact h4 {
     padding-left: 10px;
@@ -898,22 +907,29 @@ i {
     .hotSearch .hs-container h5 {
         text-indent: -1em;
     }
+    .focusMe .sect span {
+        font-size: 15px;
+    }
 }
 
 @media screen and (min-width:992px) {
     .hotSearch .hs-container p {
-        line-height: 29px;
+        line-height: 32px;
         display: -webkit-box;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 1;
         overflow: hidden;
         text-indent: 1em;
     }
+    .focusMe .iconbtn{
+        height: 50px;
+    }
+    .focusMe .sect span {
+        font-size: 12px;
+        margin: 4%;
+    }
     .hotSearch .hs-container a:nth-of-type(1) {
         margin-left: 8%;
-    }
-    .hotSearch .hs-container a:nth-of-type(2) {
-        margin-left: 11%;
     }
     .hotSearch .hs-container .circle {
         width: 80px;
@@ -927,15 +943,18 @@ i {
 }
 
 @media screen and (min-width:1200px) {
+    .focusMe .iconbtn{
+        height: 60px;
+    }
+    .focusMe .sect span {
+        font-size: 15px;
+    }
     .hotSearch .hs-container p {
         line-height: 30px;
         -webkit-line-clamp: 1;
     }
     .hotSearch .hs-container a:nth-of-type(1) {
         margin-left: 5%;
-    }
-    .hotSearch .hs-container a:nth-of-type(2) {
-        margin-left: 20%;
     }
     .hotSearch .hs-container {
         height: 130px;
