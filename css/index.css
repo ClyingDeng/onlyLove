@@ -845,7 +845,8 @@ i {
 .interact {
     background: rgba(255, 255, 255, 0.5);
 }
-.interact .time{
+
+.interact .time {
     text-align: right;
     font-size: 11px
 }
@@ -877,7 +878,11 @@ i {
 .interact .media {
     padding-left: 10px;
     padding-bottom: 15px;
-    border-bottom: 1px dashed red;
+    border-bottom: 1px dashed #ccc;
+}
+
+.interact .media:last-child {
+    border-bottom: 1px dashed transparent;
 }
 
 .gotop {
@@ -921,7 +926,7 @@ i {
         overflow: hidden;
         text-indent: 1em;
     }
-    .focusMe .iconbtn{
+    .focusMe .iconbtn {
         height: 50px;
     }
     .focusMe .sect span {
@@ -943,7 +948,7 @@ i {
 }
 
 @media screen and (min-width:1200px) {
-    .focusMe .iconbtn{
+    .focusMe .iconbtn {
         height: 60px;
     }
     .focusMe .sect span {
