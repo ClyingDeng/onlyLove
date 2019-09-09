@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Only Love</title>
+    <link rel="stylesheet" href="../plugins/css/font-awesome.css">
+    <link rel="stylesheet" href="../plugins/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/css3.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <style>
+        .riqi li {
+            width: 50px;
+            list-style: none;
+            float: left;
+            font-size: 12px;
+
+        }
+
+        .riqi li:nth-child(1) {
+            width: 120px;
+        }
+
+        .riqi li i {
+            color: rgb(255, 145, 0);
+        }
+
+        .riqi li a {
+            color: #000;
+        }
+
+        .riqi ul {
+            display: flex;
+            justify-content: center
+        }
+
+        .artice-body img {
+            margin: 0px;
+        }
+
+        .edit-time {
+            position: absolute;
+            bottom: 0;
+            right: 3%;
+            color: #999;
+            font-size: 12px;
+            width: 90px;
+            height: 24px;
+        }
+
+        .edit-time a {
+            color: #999;
+        }
+
+        .edit-time i {
+            color: #999;
+        }
+
+        .article-fx {
+            width: 780px;
+            height: 20px;
+        }
+
+        .article-fx a {
+            font-size: 14px;
+            background: #1dd06d;
+            display: inline-block;
+            text-indent: 6px;
+        }
+
+        .reward_button {
+            float: left;
+            width: 110px !important;
+            margin: 5px 1px;
+            height: 35px !important;
+            line-height: 35px !important;
+            background-color: #cd4450 !important;
+            color: #fbfbfb;
+            text-align: center;
+            text-decoration: none;
+            border-left: 1px solid #fbfbfb;
+            transition: all 0.3s;
+            -webkit-border-radius: 0 0 0 18px;
+        }
+
+        .article-fx a {
+            font-size: 14px;
+            background: #1dd06d;
+
+
+        }
+
+        .thumbs_btton {
+
+            float: left;
+            width: 110px;
+            margin: 5px 1px;
+            height: 35px !important;
+            line-height: 35px !important;
+            background-color: #444 !important;
+            color: #fbfbfb !important;
+            text-align: center;
+            text-decoration: none;
+            border-left: 1px solid #fbfbfb;
+            transition: all 0.3s;
+            -webkit-border-radius: 0 0 0 0px;
+
+        }
+
+        .shareka_button {
+            float: left;
+            width: 110px !important;
+            margin: 5px 1px;
+            height: 35px !important;
+            line-height: 35px !important;
+            background-color: #1dd06d !important;
+            color: #fbfbfb !important;
+            text-align: center;
+            text-decoration: none;
+            border-left: 1px solid #fbfbfb;
+            transition: all 0.3s;
+            -webkit-border-radius: 0 18px 0 0;
+
+        }
+    </style>
+</head>
+
+<body id="bgImg">
+    <nav class="navbar navbar-fixed-top myHeader">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#navbar-collapse" aria-expanded="false">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand logo" href="#"><img src="../imgs/logo1.png" alt=""></a>
+            </div>
+
+            <div class="collapse navbar-collapse in" id="navbar-collapse">
+                <div class="head-message visible-lg col-lg-3">
+                    <i class="fa fa-volume-up" aria-hidden="true"></i>
+                    <div id="nav_message">
+                        <ul class="mulitline" id="nav_xiaoxi">
+                            <li>唯爱(onlyLove): http://www.onlyLove.cn</li>
+                            <li>客服QQ: 869537628</li>
+                            <li>官方Email: onlyLove@163.cn</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="search1  visible-sm visible-xs">
+                    <form>
+                        <div class="search-index visible-sm visible-xs">
+                            <input name="keywords" type="text" placeholder="请输入关键字" id="keywords"
+                                onfocus="this.placeholder=''"
+                                onkeydown="if(event.keyCode==13){SiteSearch('/search.html', '#keywords');return false};"
+                                onblur="this.placeholder='请输入关键字'" />
+                            <i class="fa fa-search"><input class="search_input" value=" " type="submit" /></i>
+                        </div>
+                    </form>
+                </div>
+                <ul class="nav navbar-nav navbar-right" id="mymenu">
+                    <li id="nav_1">
+                        <a href="/index.html">唯爱</a>
+                    </li>
+                    <li id="nav_2">
+                        <a href="#">搜索</a>
+                    </li>
+                    <li id="nav_3">
+                        <!-- <span id="headingOne"> -->
+                        <a id="headingOne" href="#"><span style="margin-left: 8px"></span>热搜榜</span><span
+                                class="fa fa-chevron-up" aria-hidden="true"></span></a>
+                        <!-- </span> -->
+                        <div id="collapseOne" class="">
+                            <ul id="drop-nav">
+                                <li id="nav_77" class="drop_nav_active"><a href="/du/77.html">人气热搜</a></li>
+                                <li id="nav_78"><a href="/du/78.html">异性缘排行</a></li>
+                                <li id="nav_79"><a href="/du/79.html">完美配对</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li id="nav_4">
+                        <a href="#">个人中心</a>
+                    </li>
+                    <li id="nav_5">
+                        <a href="/shou.html">消息</a>
+                    </li>
+                    <li id="nav_6">
+                        <a href="./views/friend.html">好友列表</a>
+                    </li>
+                    <li class="col-md-2" id="nav_7">
+                        <a href="/link.html">登录</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 侧边栏 -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-xs-12" style="height: 70px;background-color: transparent"></div>
+            <div class="col-md-7 col-xs-12" style="margin-top: 10px">
+                <div>
+                    <h4 class="title01"
+                        style="color: #0181da;font-weight: 700;text-align: center;margin: 20px 0 20px;padding: 15px;">
+                        每一个IP地址都是一颗孤独的灵魂</h4>
+                </div>
+                <div class="col-md-12 col-xs-12" style="background-color: rgba(255,255,255,0.7);padding-top: 10px;">
+                    <ul class="riqi col-lg-12">
+                        <li class="col-lg-offset-3 col-lg-6 col-xs-offset-2 col-xs-10 "><a title="唯爱 =发表于 2019-07-17"><i
+                                    class="glyphicon glyphicon-calendar"></i><time>2019-07-17</time></a></li>
+                        <li><a title="本文作者：唯爱"><i class="glyphicon glyphicon-user"></i>唯爱</a></li>
+                        <li><a title="评论量"><i class="glyphicon glyphicon-comment"></i>0条</a></li>
+                        <li><a title="浏览量"><i class="glyphicon glyphicon-eye-open"></i>(167)</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-12 col-xs-12" style="background-color: rgba(255,255,255,0.7);margin-top: 20px;">
+                    <div class="artice-body" style="margin: 0px 19.5px; padding:25px 0px;">
+                        <p style="text-align: center;height: 730px;">
+                            <a href="../imgs/201907171951271281.jpg">
+                                <title>孤独的灵魂-唯爱.jpg</title>
+                                <img class="col-lg-offset-4 col-lg-12 col-xs-offset-1 col-xs-12 "
+                                    src="../imgs/201907171951271281.jpg" alt="孤独的灵魂-唯爱.jpg">
+                            </a>
+                        </p>
+                        <p>
+                            <br>
+                        </p>
+                        <p style="text-indent: 2px;">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei ; font-size:16px;>一九九四年十月，三亚。</span>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei
+                                ;font-size:16px;>有时我也除下耳机，走出椰树阴影，在正午时分脱掉鞋，玩堆沙。
+                            </span>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei
+                                ;font-size:16px;>不知道是谁，在沙滩上堆出来一个半卧的美女，招惹的过往的游客低头仔细观赏。
+                            </span>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei
+                                ;font-size:16px;>而我喜欢堆沙堡，确切地说应该是“沙城”。随手堆个有模有样的城堡，再围绕着城堡逐一开始建设，在我的沙城里甚至有城市排污管道和饮水净化工厂。
+                            </span>
+                        </p>
+                        <p>
+                            <br>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei ;font-size:16px;>太阳不是很毒，又是一天的正午。
+                            </span>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei
+                                ;font-size:16px;>空气中弥漫着海洋味道，腥和咸的海风吹着海滨的椰子树在日光下摇曳婆娑。
+                            </span>
+                        </p>
+                        <p>
+                            <br>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei
+                                ;font-size:16px;>海滩上空无一人，在这家滨海的酒店工作有几个月了，工作时间相对其他同事来说是自由的，而在珠海就已熟悉的客户关系经理也做的得心应手。酒店的邱董、林总对我初到来时接手处理的两件事情印象很深，于是我的工作时间就几乎完全由我自己安排了。
+                            </span>
+                        </p>
+                        <p>
+                            <br>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei ;font-size:16px;>这是我在三亚的第一年。
+                            </span>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei
+                                ;font-size:16px;>陕西同乡们时常聚在一起，几乎天天都有饭局。他们大部分是从事酒店、娱乐场所的管理工作，比如老魏、老刘、小索和我，还有就是一支全部是西安人的驻场乐队、三名跑场歌手。
+                            </span>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei ;font-size:16px;>每次大家聚会结束各自回自己的地方时，我又能感觉到孤单。
+                            </span>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei
+                                ;font-size:16px;>渐渐地，习惯了独自在海滩散步，习惯了看风景，有海浪也有形形色色的人，也越来越喜欢堆沙，喜欢那细腻的沙在掌中与手指温柔摩擦时的感觉。
+                            </span>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei
+                                ;font-size:16px;>孤独与我如影随形，我心在堆沙中重返平静。寂静无声，只有海浪冲刷沙滩。而树下，戴着太阳镜，我斜躺在石椅上，独享这珍贵的寂寥。
+                            </span>
+                        </p>
+                        <p>
+                            <br>
+                        </p>
+                        <p style="text-align: center;height: 380px;">
+                            <a href="../imgs/海边.jpg">
+                                <title>孤独的灵魂-唯爱.jpg</title>
+                                <img class="col-lg-offset-4 col-lg-12 col-xs-offset-1 col-xs-12 " src="../imgs/海边.jpg"
+                                    alt="孤独的灵魂-唯爱.jpg">
+                            </a>
+                        </p>
+                        <p>
+                            <br>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei ;font-size:16px;>一双白皙而迷人的赤足出现在我眼前。
+                            </span>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei
+                                ;font-size:16px;>坐起身，仰起脸，我听凭这个任长发披散的女子笑迷迷地打量。
+                            </span>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei ;font-size:16px;>逆光处，看不清她乌黑的大眼睛，她的漂亮与纯净。
+                            </span>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei ;font-size:16px;>“一起堆沙，好吗？”
+                            </span>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei ;font-size:16px;>我摇头，“现在太晒了。”
+                            </span>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei ;font-size:16px;>她扭头看看海滩，点点头。
+                            </span>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei ;font-size:16px;>“不请我坐下来？”
+                            </span>
+                        </p>
+                        <p>
+                            <br>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei ;font-size:16px;>太阳开始西斜的时候，我决定走出树阴和她一起堆沙。
+                            </span>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei
+                                ;font-size:16px;>沙子还是有些烫。看着她手里拎着的凉鞋，我禁不住说：“海伦(Helen)你穿上鞋吧，沙子很烫。”
+                            </span>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei ;font-size:16px;>而她，笑眯眯地看我，直到我低头。
+                            </span>
+                        </p>
+                        <p>
+                            <br>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei ;font-size:16px;>关于她，在树下的石头长椅上她讲了很多：
+                            </span>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei
+                                ;font-size:16px;>从英国拿到经济学硕士，回国打算与恋爱五年的男友结婚，然后再找家外资企业工作。
+                            </span>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei ;font-size:16px;>当她回到沈阳，却发现她的他早已经不再只属于她了。
+                            </span>
+                        </p>
+                        <p>
+                            <br>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei
+                                ;font-size:16px;>海伦说：离开沈阳去英国后不久，他（男朋友）开始酗酒，很严重的酗酒。单位里唯一的一辆奔驰在他酒后驾驶撞到了树上，车上的三位外方代表全部受伤，一位伤势严重。他的父亲动用了有力的关系才阻止了他被那家大公司解雇的命运。后来在半年区域销售会议上，他被通知由于所负责的地区销售业绩不佳，免除了他的区域经理的职务。
+                            </span>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei ;font-size:16px;>海伦说那个时候起，他（男朋友）一蹶不振……
+                            </span>
+                        </p>
+                        <p>
+                            <br>
+                        </p>
+                        <p style="text-align: center;height: 380px;">
+                            <a href="../imgs/海边人物.jpg">
+                                <title>孤独的灵魂-唯爱.jpg</title>
+                                <img class="col-lg-offset-4 col-lg-12 col-xs-offset-1 col-xs-12 " src="../imgs/海边人物.jpg"
+                                    alt="孤独的灵魂-唯爱.jpg">
+                            </a>
+                        </p>
+                        <p>
+                            <br>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei
+                                ;font-size:16px;>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp海伦点燃我递给她的香烟，继续讲述：那个冬天他（男朋友）说是他经历的最寒冷的一个冬天，大雪覆盖了整个城市的每个角落。大年初五他（男朋友）从同学家聚会出来，又想喝点酒，于是，一个人到闹市找了间酒吧喝酒，直到被酒吧老板轰到街上。外面下着大雪，他跌跌撞撞地横穿马路想拦一部出租车，可一辆车却把他撞倒了。他在医院病床上醒来看到的第一个人就是肇事者，一个当时就自己开了三家饭店的女人。他在她那里得到安慰，也得到了爱。
+                            </span>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei
+                                ;font-size:16px;>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp在我（Helen）回沈阳的一年前，他（男朋友）已经完全戒酒，任何场合都只喝矿泉水。再后来，他们领了结婚证。他（男朋友）辞掉了那家大公司的工作，通过他父亲的关系，在黄金地段搞到一块地皮，和她办了一家公司，成了沈阳最年轻的地产商……
+                            </span>
+                        </p>
+                        <p>
+                            <br>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei ;font-size:16px;>海伦讲到这里显得若有所思，任烟头烫到微微颤抖的手指。
+                            </span>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei ;font-size:16px;>“你能喝酒吗，酒量是不是很厉害吧？”海伦问我。
+                            </span>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei ;font-size:16px;>我苦笑着摇摇头，“在伦敦我从来不喝酒。”
+                            </span>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei
+                                ;font-size:16px;>海伦陷入沉思，笑笑说：“现在我一次能喝掉整瓶的烧刀子，没一点事。”
+                            </span>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei ;font-size:16px;>我保持沉默。
+                            </span>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei ;font-size:16px;>“你堆沙是吗？我第一天到海滩游泳就看到你在堆沙。”
+                            </span>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei ;font-size:16px;>海伦想起什么似的，笑着问我。
+                            </span>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei ;font-size:16px;>我有些尴尬，点点头。
+                            </span>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei
+                                ;font-size:16px;>暖暖的沙滩热乎乎的叫人想躺下好好伸展一下。并肩坐下，她久久不动，只是看着大海的远方。
+                            </span>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei ;font-size:16px;>“我们堆城堡，好不好？”她说。
+                            </span>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei ;font-size:16px;>“好！”
+                            </span>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei ;font-size:16px;>“好！”
+                            </span>
+                        </p>
+                        <p>
+                            <br>
+                        </p>
+                        <p style="text-align: center;height: 380px;">
+                            <a href="../imgs/沙雕.jpg">
+                                <title>孤独的灵魂-唯爱.jpg</title>
+                                <img class="col-lg-offset-4 col-lg-12 col-xs-offset-1 col-xs-12 " src="../imgs/沙雕.jpg"
+                                    alt="孤独的灵魂-唯爱.jpg">
+                            </a>
+                        </p>
+                        <p>
+                            <br>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei ;font-size:16px;>渐渐的出现了几个游客模样的人兴致勃勃地围观。
+                            </span>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei ;font-size:16px;>城堡有了模样，面积很大。
+                            </span>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei
+                                ;font-size:16px;>她还在城堡上用捡来的冰淇淋棒找合适的位置勾勒出一扇扇窗户，惹的几个和她一样不知疲倦的过客们赞叹她的仔细。
+                            </span>
+                        </p>
+                        <p>
+                            <br>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei ;font-size:16px;>夜晚降临，自助烧烤和海滩舞会就要开始。
+                            </span>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei
+                                ;font-size:16px;>远远的，看见她换了比基尼泳装从大堂蹦跳着冲向这边，那白皙的肌肤在月光下散发着淡淡的光晕。
+                            </span>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei
+                                ;font-size:16px;>海滩、月光总是会给人无限的遐思吧！可能大海，可能在远方，爱也就在那一刻吧。
+                            </span>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei ;font-size:16px;>到了身前，深深的看我，海伦仰头问我：“喜欢我吗？”
+                                我使劲地点点头。
+                            </span>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei
+                                ;font-size:16px;>当海滩上再次寂静时，只有海风怂恿着海浪，一次次的冲击沙滩，远处海面上的渔船灯光点点。
+                            </span>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei ;font-size:16px;>海伦突然说：“我想和你永远在一起！”
+                            </span>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei ;font-size:16px;>我沉默。
+                            </span>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei
+                                ;font-size:16px;>海伦似乎并不在意我的沉默，她忘情的说：“你是我生命中第二个男人。”
+                            </span>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei ;font-size:16px;>我问自己：永远到底有多远？
+                            </span>
+                        </p>
+                        <p>
+                            <br>
+                        </p>
+                        <p style="text-align: center;height: 380px;">
+                            <a href="../imgs/沙滩.jpg">
+                                <title>孤独的灵魂-唯爱.jpg</title>
+                                <img class="col-lg-offset-4 col-lg-12 col-xs-offset-1 col-xs-12 " src="../imgs/沙滩.jpg"
+                                    alt="孤独的灵魂-唯爱.jpg">
+                            </a>
+                        </p>
+                        <p>
+                            <br>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei
+                                ;font-size:16px;>第二天下午的时候老魏打来电话，问我为什么没有回去，是不是有艳遇？说有艳遇，也给他介绍认识啊。
+                            </span>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei ;font-size:16px;>应了老魏晚上在商品街的“东北王”吃饭。
+                            </span>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei ;font-size:16px;>海伦令在场的人惊艳。
+                            </span>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei
+                                ;font-size:16px;>“大家好，我就是你们庄臣的那个艳遇。”她的这句开场白更是叫男人们大声叫好。
+                            </span>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei
+                                ;font-size:16px;>几天里，我接的电话几乎全是找她的，都是我的朋友和老乡。不是今天晚饭想吃东山羊还是文昌鸡，就是我们这里开了新场子来看啊……诸如此类，我们两个人天天参加各式的活动和聚会。
+                            </span>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei ;font-size:16px;>海伦再没有向我提出堆沙，我也决口不问她的往事。
+                            </span>
+                        </p>
+                        <p>
+                            <br>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei ;font-size:16px;>三亚的阴天，难得。
+                            </span>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei ;font-size:16px;>凤凰机场显得更加冷清。
+                            </span>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei
+                                ;font-size:16px;>“爱我就和我在一起！”海伦乌黑的眼睛还是亮晶晶的让陶醉，她又一次地问我，那目光却显得有些暗淡了。
+                            </span>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei ;font-size:16px;>“我爱你！”我毫不犹豫地回答。
+                            </span>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei
+                                ;font-size:16px;>“离开三亚这个小地方，你要喜欢的话，等我们老了再回来定居，和老魏他们在一起，好吗？”期待，再次在她眼中熠熠生辉。
+                            </span>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei ;font-size:16px;>“既然爱我，就永远和我在一起，是吗？”
+                            </span>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei ;font-size:16px;>对面她的问话，我无言以对。
+                            </span>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei
+                                ;font-size:16px;>她的目光开始咄咄逼人，肩膀也耸起。我不喜欢这样子的她——一副不可一世的架势。但我何曾没有这样过呢，对那个我曾深爱的女人。
+                            </span>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei
+                                ;font-size:16px;>眼泪正在一滴滴烫伤着我的心，“机场广播员换人了？那声音变了。”我扭头说道。
+                            </span>
+                        </p>
+                        <p>
+                            <br>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei ;font-size:16px;>一九九九年平安夜，贵阳。
+                            </span>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei
+                                ;font-size:16px;>从黔灵山上下来，贵阳城已经灯火辉煌。不想回房间，便让电梯在四楼停下，走到我的办公室，打开电脑，上网。
+                            </span>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei ;font-size:16px;>网上显示海伦在线，“你好吗？”我敲出一行字。
+                            </span>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei ;font-size:16px;>那边的回答：“好。”
+                            </span>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei ;font-size:16px;>中央空调的噪音小的多了。
+                            </span>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei
+                                ;font-size:16px;>她写：“你还是要城市，哪怕是你用沙子堆成的，还是不要城堡，即便它是现实中我们的城堡？”
+                            </span>
+                        </p>
+                        <p style="text-indent: 2px">
+                            <span style="font-family: 微软雅黑，" Microsft YaHei ;font-size:16px;>我写：“每一个IP地址都是一颗孤独的灵魂。
+                            </span>
+                        </p>
+                        <p style="text-align: center;height: 380px;">
+                            <a href="../imgs/有水印.jpg">
+                                <title>孤独的灵魂-唯爱.jpg</title>
+                                <img class="col-lg-offset-4 col-lg-12 col-xs-offset-1 col-xs-12 " src="../imgs/有水印.jpg"
+                                    alt="孤独的灵魂-唯爱.jpg">
+                            </a>
+                        </p>
+                        <p>
+                            <br>
+                        </p>
+                        <div style="text-align:center">
+                            <audio autoplay="autoplay" loop="loop" preload="auto" controls controls
+                                controlslist="nodownload"></audio>
+                            <source src="/upload/201907/17/201907172005589953.mp3" type="audio/mpeg">
+                            </audio>
+                            <div class="edit-time">
+                                <a title="唯爱（only you）"><i class="glyphicon glyphicon-map-marker"></i>only you.cn</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="article-fx">
+                        <div class="thumbs_content">
+                            <a class="reward_button" href="javascript;" title onclick="dashangToggle()"><i
+                                    class="glyphicon glyphicon-usd"></i>打赏</a>
+                            <a class="thumbs_btton" data-id="55" href="#" title>
+                                <i class="glyphicon glyphicon-thumbs-up zan_logo"></i>
+                                <span class="zan">点赞（<span class="clear">4</span>）</span>
+                            </a>
+                            <a class="fx-btn shareka_button" href=""><i
+                                    class="glyphicon glyphicon-option-horizontal"></i>分享&nbsp;&nbsp;&nbsp;</a>
+                            <span class="clear"></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 col-xs-12 aside-right" style="margin-bottom: 20px;">
+                <div class="focusMe">
+                    <h4><i class="fa fa-heart" style="color:orangered" aria-hidden="true"></i>关注我 <small>focus
+                            me</small></h4>
+                    <section class="sect">
+                        <a href="#" class="iconbtn fa fa-download" style="background-color: #3bb9d8;"></a>
+                        <a href="#" class="iconbtn fa fa-shopping-cart" style="background-color: #ec6d34;"></a>
+                        <a href="#" class="iconbtn fa fa-share-alt" style="background-color: #a0ed36;"></a>
+                        <a href="#" class="iconbtn fa fa-envelope" style="background-color: #39d39f;"></a><br>
+                    </section>
+                    <section class="sect">
+                        <span>资源下载</span>
+                        <span>唯爱商城</span>
+                        <span>分享本站</span>
+                        <span>联系唯爱</span>
+                    </section>
+                </div>
+                <div class="col-md-12 col-xs-12" style="background-color: rgba(255,255,255,0.5);">
+                    <div class="index-login">
+                        <div class="logo">
+                            <div class="card">
+                                <div class="front">
+                                    <img src="../imgs/bg6.jpg" alt="">
+                                </div>
+                                <div class="back">
+                                    <div class="back-content middle">
+                                        <h3>唯爱</h3>
+                                        <span><i class="fa fa-heart" aria-hidden="true"
+                                                style="color:orangered;"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="login">
+                            <a href="">登录</a>
+                            <a href="">注册</a>
+                        </div>
+                        <p>你 若 盛 开，蝴 蝶 自 来</p>
+                    </div>
+                    <div class="index-data">
+                        <ul>
+                            <li><strong>521</strong><br><span>运行天数</span></li>
+                            <li><strong>13</strong><br><span>近日访客</span></li>
+                            <li><strong>215</strong><br><span>文章数量</span></li>
+                        </ul>
+                    </div>
+                    <div class="search">
+                        <input type="text" placeholder="输入关键字搜索">
+                        <i class="fa fa-search" style="color:orangered;" aria-hidden="true"></i>
+                    </div>
+                    <div class="recentNew">
+                        <h4><i class="fa fa-bell" style="color:orangered" aria-hidden="true"></i></i>最近更新
+                            <small>recently new</small></h4>
+                        <ul>
+                            <li><i class="fa fa-book" style="color:orangered" aria-hidden="true"></i><span>
+                                    <font>分类阅读</font>08-17
+                                </span>个人爱好介绍</li>
+                            <li><i class="fa fa-heartbeat" style="color:orangered" aria-hidden="true"></i><span>
+                                    <font>唯爱物语</font>08-16
+                                </span>提升生活质量</li>
+                            <li><i class="fa fa-cubes" style="color:orangered" aria-hidden="true"></i><span>
+                                    <font>素材宝库</font>08-14
+                                </span>择偶标准</li>
+                            <li><i class="fa fa-camera-retro" style="color:orangered" aria-hidden="true"></i><span>
+                                    <font>美图欣赏</font>08-11
+                                </span>爱的誓言</li>
+                        </ul>
+                    </div>
+                    <div class="saying">
+                        <h4><i class="fa fa-coffee" style="color:orangered" aria-hidden="true"></i>说说 <small>say
+                                say</small></h4>
+                        <ul>
+                            <li>
+                                <div><span>08-17 </span><b>提升生活质量-定期丢东西</b></div>
+                            </li>
+                            <li>
+                                <div><span>08-10 </span><b>一个人时请坚强</b></div>
+                            </li>
+                            <li>
+                                <div><span>08-10 </span><b>两个人时请包容</b></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="hotSearch">
+                        <h4><i class="fa fa-fire" style="color:orangered" aria-hidden="true"></i>热搜 <small>hot
+                                search</small></h4>
+                        <ul>
+                            <li>
+                                <div class="hs-container">
+                                    <div class="circle"></div>
+                                    <h5>醉卧沙场君莫笑，古来征战几人回</h5>
+                                    <p>诗的最末两句“醉卧沙场君莫笑，古来征战几人回。”顺着前两句的诗意来看应当是写筵席上的畅饮和劝酒，这样理解的话，全诗无论是在诗意还是诗境上也就自然而然地融会贯通了，过去曾有人认为这两句“作旷达语，倍觉悲痛”。还有人说：“故作豪饮之词，然悲感已极”。话虽不同，但都离不开一个“悲”字。后来更有用低沉、悲凉、感伤、反战等等词语来概括这首诗的思想感情的，依据也是三四两句，特别是末句。“古来征战几人回”，显然是一种夸张的说法。清代施补华说这两句诗：“作悲伤语读便浅，作谐谑语读便妙，在学人领悟。”
+                                    </p>
+                                    <a href=""><i class="fa fa-calculator" aria-hidden="true"
+                                            style="color:orangered"></i>2018-08-12</a>
+                                    <a href=""><i class="fa fa-thumbs-up" aria-hidden="true"
+                                            style="color:orangered"></i>520</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="hs-container">
+                                    <div class="circle"></div>
+                                    <h5>醉卧沙场君莫笑，古来征战几人回</h5>
+                                    <p>诗的最末两句“醉卧沙场君莫笑，古来征战几人回。”顺着前两句的诗意来看应当是写筵席上的畅饮和劝酒，这样理解的话，全诗无论是在诗意还是诗境上也就自然而然地融会贯通了，过去曾有人认为这两句“作旷达语，倍觉悲痛”。还有人说：“故作豪饮之词，然悲感已极”。话虽不同，但都离不开一个“悲”字。后来更有用低沉、悲凉、感伤、反战等等词语来概括这首诗的思想感情的，依据也是三四两句，特别是末句。“古来征战几人回”，显然是一种夸张的说法。清代施补华说这两句诗：“作悲伤语读便浅，作谐谑语读便妙，在学人领悟。”
+                                    </p>
+                                    <a href=""><i class="fa fa-calculator" aria-hidden="true"
+                                            style="color:orangered"></i>2018-08-12</a>
+                                    <a href=""><i class="fa fa-thumbs-up" aria-hidden="true"
+                                            style="color:orangered"></i>520</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="hs-container">
+                                    <div class="circle"></div>
+                                    <h5>醉卧沙场君莫笑，古来征战几人回</h5>
+                                    <p>诗的最末两句“醉卧沙场君莫笑，古来征战几人回。”顺着前两句的诗意来看应当是写筵席上的畅饮和劝酒，这样理解的话，全诗无论是在诗意还是诗境上也就自然而然地融会贯通了，过去曾有人认为这两句“作旷达语，倍觉悲痛”。还有人说：“故作豪饮之词，然悲感已极”。话虽不同，但都离不开一个“悲”字。后来更有用低沉、悲凉、感伤、反战等等词语来概括这首诗的思想感情的，依据也是三四两句，特别是末句。“古来征战几人回”，显然是一种夸张的说法。清代施补华说这两句诗：“作悲伤语读便浅，作谐谑语读便妙，在学人领悟。”
+                                    </p>
+                                    <a href=""><i class="fa fa-calculator" aria-hidden="true"
+                                            style="color:orangered"></i>2018-08-12</a>
+                                    <a href=""><i class="fa fa-thumbs-up" aria-hidden="true"
+                                            style="color:orangered"></i>520</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pop-Rank">
+                        <div class="changeOver">
+                            <a href="javascript:void(0);" class="love sanjiao"><span><i class="fa fa-heartbeat"
+                                        aria-hidden="true" style="color:orangered"></i>
+                                    狂人榜</span></a>
+                            <a href="javascript:void(0);" class="pop sanjiao"><span><i class="fa fa-fire"
+                                        aria-hidden="true" style="color:orangered"></i>
+                                    魅力榜</span></a>
+                        </div>
+                        <div class="love-rank loveRank">
+                            <ul>
+                                <li><span>1</span><a href="">涂山红红</a><b>(520)</b></li>
+                                <li><span>2</span><a href="">涂山雅雅</a><b>(510)</b></li>
+                                <li><span>3</span><a href="">涂山容容</a><b>(500)</b></li>
+                                <li><span>4</span><a href="">涂山苏苏</a><b>(490)</b></li>
+                                <li><span>5</span><a href="">东方淮竹</a><b>(480)</b></li>
+                            </ul>
+                        </div>
+                        <div class="love-rank popRank">
+                            <ul>
+                                <li><span>1</span><a href="">东方秦兰</a><b>(520)</b></li>
+                                <li><span>2</span><a href="">东方月初</a><b>(510)</b></li>
+                                <li><span>3</span><a href="">王权霸业</a><b>(500)</b></li>
+                                <li><span>4</span><a href="">王权醉</a><b>(490)</b></li>
+                                <li><span>5</span><a href="">王权富贵</a><b>(480)</b></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="interact">
+                        <h4><i class="fa fa-comment" style="color:orangered" aria-hidden="true"></i>互动消息
+                            <small>interact</small></h4>
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object" src="../imgs/bg1.jpg" alt="..."
+                                        style="width: 60px;height:60px">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <div class="col-md-6 col-xs-6"><i class="fa fa-user" aria-hidden="true"
+                                        style="color:orangered"></i>往昔</div>
+                                <div class="col-md-offset-0 col-md-6 col-xs-offset-1 col-xs-5">2019-06-12</div>
+                                <a href="#" class="msg">彼爱2019-04-21说：
+                                    在爱情中你要搞清楚，是你喜欢人家，不是人家喜欢你。既然主动了，就算受了天大的委屈，也不能怪任何人，只怪你有本事喜欢人家，没本事让人家喜欢你。</a>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object" src="../imgs/bg1.jpg" alt="..."
+                                        style="width: 60px;height:60px">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <div class="col-md-6 col-xs-6"><i class="fa fa-user" aria-hidden="true"
+                                        style="color:orangered"></i>往昔</div>
+                                <div class="col-md-offset-0 col-md-6 col-xs-offset-1 col-xs-5">2019-06-12</div>
+                                <a href="#" class="msg">彼爱2019-04-21说：
+                                    在爱情中你要搞清楚，是你喜欢人家，不是人家喜欢你。既然主动了，就算受了天大的委屈，也不能怪任何人，只怪你有本事喜欢人家，没本事让人家喜欢你。</a>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object" src="../imgs/bg1.jpg" alt="..."
+                                        style="width: 60px;height:60px">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <div class="col-md-6 col-xs-6"><i class="fa fa-user" aria-hidden="true"
+                                        style="color:orangered"></i>往昔</div>
+                                <div class="col-md-offset-0 col-md-6 col-xs-offset-1 col-xs-5">2019-06-12</div>
+                                <a href="#" class="msg">彼爱2019-04-21说：
+                                    在爱情中你要搞清楚，是你喜欢人家，不是人家喜欢你。既然主动了，就算受了天大的委屈，也不能怪任何人，只怪你有本事喜欢人家，没本事让人家喜欢你。</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="gotop" style="z-index: 20"><i class="fa fa-chevron-up" style="color:#fff"
+            aria-hidden="true"></i></a>
+    <footer id="myfooter">
+        <div class="container-fluid">
+            <div class="row" id="footer-top">
+                <div id="footer-big">
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12" id="footer-aboutsearch">
+                        <h4>热搜排行</h4>
+                        <div class="footer-search">
+                            <ul>
+                                <li><button class="btn btn-danger">1</button><a href="#">遇见爱情</a> <b>(33)</b></li>
+                                <li><button class="btn btn-info">2</button><a href="#">今生爱，前世债</a><b>(172)</b></li>
+                                <li><button class="btn btn-warning">3</button><a href="#">真爱是什么</a><b>(61)</b></li>
+                                <li><button class="btn btn-success">4</button><a href="#">谁输了爱情这盘棋</a><b>(42)</b> </li>
+                                <li><button class="btn btn-primary">5</button><a href="#">你的宿命</a> <b>(32)</b></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12" id="footer-abouthotspot">
+                        <h4>微语热点</h4>
+
+                        <div class="footer-hotspot">
+                            <ul>
+                                <li>
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <a href="#">
+                                                <img class="media-object" src="../imgs/huangguan.png" alt="...">
+                                            </a>
+                                        </div>
+                                        <div class="media-body">
+                                            <h4 class="media-heading">分寸</h4>
+                                            <a
+                                                href="#">人，不能做得太假，假了，难以交心；利，不能看得太重，重了，难以明志；情，不能陷得太深，深了，难以自拔；话，不能说得太满，满了，难以圆场；事，不能做得太绝，绝了，难以进退；梦，不能做得太久，久了，难以清醒；调，不能定得太高，高了，难以合声；世，不能看得太清，清了，难以作为。</a>
+                                        </div>
+                                    </div>
+                                <li>
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <a href="#">
+                                                <img class="media-object" src="../imgs/huangguan1.png" alt="...">
+                                            </a>
+                                        </div>
+                                        <div class="media-body">
+                                            <h4 class="media-heading">爱情不能怪别人</h4>
+                                            <a href="#">彼爱2019-04-21说：
+                                                在爱情中你要搞清楚，是你喜欢人家，不是人家喜欢你。既然主动了，就算受了天大的委屈，也不能怪任何人，只怪你有本事喜欢人家，没本事让人家喜欢你。</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <a href="#">
+                                                <img class="media-object" src="../imgs/huangguan2.png" alt="...">
+                                            </a>
+                                        </div>
+                                        <div class="media-body">
+                                            <h4 class="media-heading">爱情公式</h4>
+                                            <a href="#">
+                                                公式代表的含义：F代表自己对对方的好感，Ch代表对方的魅力，P代表看到对方时性激素的分泌量，表现为自己的兴奋程度，C代表自己的信心，I代表亲密程度，SI代表自我形象。按照从1到10的顺序，分别为自己的各个情况打分，然后代入公式即可。</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 hidden-md hidden-sm hidden-xs">
+                        <div class="footer-aboutfame">
+                            <h4>名气排行榜</h4>
+                            <div class="footer-fame">
+                                <ul>
+                                    <li class="col-md-3">
+                                        <a href="javascript:void(0);"><img class="footer-mytooltip" title="我爱你，用我的良心"
+                                                src="../imgs/4.jpg" alt=""> </a>
+                                    </li>
+                                    <li class="col-md-3">
+                                        <a href="javascript:void(0);"><img class="footer-mytooltip" title="我爱你，用我的良心"
+                                                src="../imgs/4.jpg" alt=""> </a>
+                                    </li>
+                                    <li class="col-md-3">
+                                        <a href="javascript:void(0);"><img class="footer-mytooltip" title="我爱你，用我的良心"
+                                                src="../imgs/4.jpg" alt=""> </a>
+                                    </li>
+                                    <li class="col-md-3">
+                                        <a href="javascript:void(0);"><img class="footer-mytooltip" title="我爱你，用我的良心"
+                                                src="../imgs/4.jpg" alt=""> </a>
+                                    </li>
+                                    <li class="col-md-3">
+                                        <a href="javascript:void(0);"><img class="footer-mytooltip" title="我爱你，用我的良心"
+                                                src="../imgs/4.jpg" alt=""> </a>
+                                    </li>
+                                    <li class="col-md-3">
+                                        <a href="javascript:void(0);"><img class="footer-mytooltip" title="我爱你，用我的良心"
+                                                src="../imgs/4.jpg" alt=""> </a>
+                                    </li>
+                                    <li class="col-md-3">
+                                        <a href="javascript:void(0);"><img class="footer-mytooltip" title="我爱你，用我的良心"
+                                                src="../imgs/4.jpg" alt=""> </a>
+                                    </li>
+                                    <li class="col-md-3">
+                                        <a href="javascript:void(0);"><img class="footer-mytooltip" title="我爱你，用我的良心"
+                                                src="../imgs/4.jpg" alt=""> </a>
+                                    </li>
+                                    <li class="col-md-3">
+                                        <a href="javascript:void(0);"><img class="footer-mytooltip" title="我爱你，用我的良心"
+                                                src="../imgs/4.jpg" alt=""> </a>
+                                    </li>
+                                    <li class="col-md-3">
+                                        <a href="javascript:void(0);"><img class="footer-mytooltip" title="我爱你，用我的良心"
+                                                src="../imgs/4.jpg" alt=""> </a>
+                                    </li>
+                                    <li class="col-md-3">
+                                        <a href="javascript:void(0);"><img class="footer-mytooltip" title="我爱你，用我的良心"
+                                                src="../imgs/4.jpg" alt=""> </a>
+                                    </li>
+                                    <li class="col-md-3">
+                                        <a href="javascript:void(0);"><img class="footer-mytooltip" title="我爱你，用我的良心"
+                                                src="../imgs/4.jpg" alt=""> </a>
+                                    </li>
+                                    <li class="col-md-3">
+                                        <a href="javascript:void(0);"><img class="footer-mytooltip" title="我爱你，用我的良心"
+                                                src="../imgs/4.jpg" alt=""> </a>
+                                    </li>
+                                    <li class="col-md-3">
+                                        <a href="javascript:void(0);"><img class="footer-mytooltip" title="我爱你，用我的良心"
+                                                src="../imgs/4.jpg" alt=""> </a>
+                                    </li>
+                                    <li class="col-md-3">
+                                        <a href="javascript:void(0);"><img class="footer-mytooltip" title="我爱你，用我的良心"
+                                                src="../imgs/4.jpg" alt=""> </a>
+                                    </li>
+                                    <li class="col-md-3">
+                                        <a href="javascript:void(0);"><img class="footer-mytooltip" title="我爱你，用我的良心"
+                                                src="../imgs/4.jpg" alt=""> </a>
+                                    </li>
+                                    <!-- <span id="tankuang" style="display: none;"></span> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                        <div class="footer-aboutmap">
+                            <h4>网站地图</h4>
+                            <div class="footer-map">
+                                <ul>
+                                    <li class="col-xs-6"><span><i class="fa fa-eercast"
+                                                aria-hidden="true"></i>&nbsp;动态：</span>我的世界</li>
+                                    <li class="col-xs-6"><span><i class="fa fa-magic"
+                                                aria-hidden="true"></i>&nbsp;热搜：</span>为你爆灯</li>
+                                    <li class="col-xs-6"><span><i class="fa fa-heart" aria-hidden="true"></i>&nbsp;pick
+                                            ：</span>异性缘排行</li>
+                                    <li class="col-xs-6"><span><i class="fa fa-diamond"
+                                                aria-hidden="true"></i>&nbsp;邂逅：</span>完美配对</li>
+                                    <li class="col-xs-6"><span><i class="fa fa-question-circle-o"
+                                                aria-hidden="true"></i> </i>&nbsp;问问：</span>个性留言</li>
+                                    <li class="col-xs-6"><span><i class="fa fa-search" aria-hidden="true"></i>
+                                            &nbsp;找找：</span>声光画影</li>
+                                    <li class="col-xs-6"><span><i class="fa fa-handshake-o"
+                                                aria-hidden="true"></i>&nbsp;想想：</span>关于唯爱</li>
+                                    <li class="col-xs-6"><span><i class="fa fa-gratipay" aria-hidden="true"></i>
+                                            &nbsp;唯爱：</span>onlylove.cn</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="footer-bottom">
+                <div>
+                    <span>copyright &copy;2018-2019 唯爱(onlylove) by onlylove.cn </span>
+                    <span>苏PIC备1900328号-1</span>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </footer>
+    <!-- 尾栏 -->
+
+    <script src="../plugins/js/jquery-3.4.1.min.js"></script>
+    <script src="../plugins/js/bootstrap.js"></script>
+    <script src="../js/index.js"></script>
+
+</body>
+
+</html>
