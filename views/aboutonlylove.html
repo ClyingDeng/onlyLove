@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Only Love</title>
+    <link rel="stylesheet" href="../plugins/css/font-awesome.css">
+    <link rel="stylesheet" href="../plugins/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/css3.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/message.css">
+</head>
+
+<body id="bgImg">
+    <nav class="navbar navbar-fixed-top myHeader">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#navbar-collapse" aria-expanded="false">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand logo" href="#"><img src="../imgs/logo1.png" alt=""></a>
+            </div>
+
+            <div class="collapse navbar-collapse in" id="navbar-collapse">
+                <div class="head-message visible-lg col-lg-3">
+                    <i class="fa fa-volume-up" aria-hidden="true"></i>
+                    <div id="nav_message">
+                        <ul class="mulitline" id="nav_xiaoxi">
+                            <li>唯爱(onlyLove): http://www.onlyLove.cn</li>
+                            <li>客服QQ: 869537628</li>
+                            <li>官方Email: onlyLove@163.cn</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="search1  visible-sm visible-xs">
+                    <form>
+                        <div class="search-index visible-sm visible-xs">
+                            <input name="keywords" type="text" placeholder="请输入关键字" id="keywords"
+                                onfocus="this.placeholder=''"
+                                onkeydown="if(event.keyCode==13){SiteSearch('/search.html', '#keywords');return false};"
+                                onblur="this.placeholder='请输入关键字'" />
+                            <i class="fa fa-search"><input class="search_input" value=" " type="submit" /></i>
+                        </div>
+                    </form>
+                </div>
+                <ul class="nav navbar-nav navbar-right" id="mymenu">
+                    <li id="nav_1">
+                        <a href="/index.html">唯爱</a>
+                    </li>
+                    <li id="nav_2">
+                        <a href="#">搜索</a>
+                    </li>
+                    <li id="nav_3">
+                        <!-- <span id="headingOne"> -->
+                        <a id="headingOne" href="#"><span style="margin-left: 8px"></span>排行</span><span id="inversion"
+                                class="fa fa-chevron-up" aria-hidden="true"></span></a>
+                        <!-- </span> -->
+                        <div id="collapseOne" class="">
+                            <ul id="drop-nav">
+                                <li id="nav_77" class="drop_nav_active"><a href="/du/77.html">狂热榜</a></li>
+                                <li id="nav_78"><a href="/du/78.html">魅力榜</a></li>
+                                <li id="nav_79"><a href="/du/79.html">比翼榜</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li id="nav_4">
+                        <a href="#">热搜</a>
+                    </li>
+                    <li id="nav_5">
+                        <a href="/shou.html">个人中心</a>
+                    </li>
+                    <li id="nav_6">
+                        <a href="./views/friend.html">消息</a>
+                    </li>
+                    <li class="col-md-2" id="nav_7">
+                        <a href="/link.html">登录</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 侧边栏 -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-xs-12" style="height: 70px;background-color: transparent"></div>
+            <div class="col-md-8 col-xs-12" style="margin-top: 10px">
+
+                <div class="message col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h4><img src="../imgs/huihua.png" alt="">最近的留言会显示在这里，显示十条</h4>
+                    <div class="col-xs-12 ">
+                        <ul>
+                            <li class="col-md-4 col-sm-4 col-xs-6"><a><img src="../imgs/4.jpg" alt=""></a>
+                                <div class="messge"><span>往昔</span>
+                                    <br>
+                                    <p>河南省焦作市</p>
+                                </div>
+                            </li>
+                            <li class="col-md-4 col-sm-4 col-xs-6"><a><img src="../imgs/4.jpg" alt=""></a>
+                                <div class="messge"><span>你的样子</span>
+                                    <br>
+                                    <p>北京市北京市</p>
+                                </div>
+                            </li>
+                            <li class="col-md-4 col-sm-4 col-xs-6"><a><img src="../imgs/4.jpg" alt=""></a>
+                                <div class="messge"><span>美美微笑</span>
+                                    <br>
+                                    <p>北京市北京市</p>
+                                </div>
+                            </li>
+                            <li class="col-md-4 col-sm-4 col-xs-6"><a><img src="../imgs/4.jpg" alt=""></a>
+                                <div class="messge"><span>都是夜归人</span>
+                                    <br>
+                                    <p>北京市朝阳区</p>
+                                </div>
+                            </li>
+                            <li class="col-md-4 col-sm-4 col-xs-6"><a><img src="../imgs/4.jpg" alt=""></a>
+                                <div class="messge"><span>一缕阳光</span>
+                                    <br>
+                                    <p>江苏省苏州市</p>
+                                </div>
+                            </li>
+                            <li class="col-md-4 col-sm-4 col-xs-6"><a><img src="../imgs/4.jpg" alt=""></a>
+                                <div class="messge"><span>代替品</span>
+                                    <br>
+                                    <p>辽宁省朝阳市</p>
+                                </div>
+                            </li>
+                            <li class="col-md-4 col-sm-4 col-xs-6"><a><img src="../imgs/4.jpg" alt=""></a>
+                                <div class="messge"><span>？</span>
+                                    <br>
+                                    <p>山西省太原市</p>
+                                </div>
+                            </li>
+                            <li class="col-md-4 col-sm-4 col-xs-6"><a><img src="../imgs/4.jpg" alt=""></a>
+                                <div class="messge"><span>Sumjess</span>
+                                    <br>
+                                    <p>天津市红桥区</p>
+                                </div>
+                            </li>
+                            <li class="col-md-4 col-sm-4 col-xs-6"><a><img src="../imgs/4.jpg" alt=""></a>
+                                <div class="messge"><span>浮生若梦</span>
+                                    <br>
+                                    <p>辽宁省沈阳市</p>
+                                </div>
+                            </li>
+                            <li class="col-md-4 col-sm-4 col-xs-6"><a><img src="../imgs/4.jpg" alt=""></a>
+                                <div class="messge"><span>情花初开</span>
+                                    <br>
+                                    <p>江苏省无锡市</p>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="interlinkage col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h4><img src="../imgs/lianjie.png" alt="">本站友情链接：</h4>
+                    <div>
+                        <ul>
+                            <li class="col-lg-2 col-md-2 col-sm-2 col-xs-4"><a href="">狂热榜</a></li>
+                            <li class="col-lg-2 col-md-2 col-sm-2 col-xs-4"><a href="">魅力榜</a></li>
+                            <li class="col-lg-2 col-md-2 col-sm-2 col-xs-4"><a href="">比翼榜</a></li>
+                            <li class="col-lg-2 col-md-2 col-sm-2 col-xs-4"><a href="">热搜</a></li>
+                            <li class="col-lg-2 col-md-2 col-sm-2 col-xs-4"><a href="">搜索</a></li>
+                            <li class="col-lg-2 col-md-2 col-sm-2 col-xs-4"><a href="">动态</a></li>
+
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="privacy col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h4><img src="../imgs/yinsixieyi.png" alt="">隐私说明：</h4>
+                    <div>
+                        <ul>
+                        <li >1、在您注册本站用户之前请先阅读本站隐私政策，如有疑问请咨询客服人员。</li>
+                        <li>2、在您注册帐号时，您根据唯爱要求提供的个人注册信息（商家应法律法规要求需公示的企业名称及相关工商注册信息除外）。</li>
+                        <li>3、唯爱亦不允许任何第三方以任何手段收集、编辑、出售或者无偿传播您的个人信息。任何用户如从事上述活动，一经发现，唯爱有权立即终止与该用户的服务协议。</li>
+                        <li>4、为服务用户的目的，唯爱可能通过使用您的个人信息，向您提供您感兴趣的信息，包括但不限于向您发出产品和服务信息，或者与唯爱合作伙伴共享信息以便他们向您发送有关其产品和服务的信息（后者需要您的事先同意）。</li>
+                        <li>5、唯爱帐号均有帐号安全功能，请妥善保管您的用户名及密码信息。唯爱将通过对用户密码进行加密等安全措施确保您的信息不丢失，不被滥用和变造。尽管有前述安全措施，但同时也请您注意在信息网络上不存在“完善的安全措施”。</li>
+                        </ul> </div>
+                </div>
+                <div class="web-info col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h4><img src="../imgs/web.png" alt="">本站信息：</h4>
+                    <div>
+                        <span>名称：“唯爱(only love)”</span><br>
+                        <span>地址：http://www.onlyLove.cn/</span><br>
+                        <span>介绍：唯爱(only love)是一个大型交友相亲网站，“有缘千里来相会，只为遇见你”。</span><br>
+                    </div>
+                </div>
+                <div class="feedback col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h4><img src="../imgs/fankui-.png" alt="">反馈申请：</h4>
+                    <div><i><img src="../imgs/nicheng.png" alt=""></i>
+                        <input name="username" type="text" id="username" size="16" placeholder="用户名（必填）" datatype="*"
+                            sucmsg=" " nullmsg="请填写信息！" class="UserName">
+                    </div>
+                    <div class="message-phone"><i><img src="../imgs/lianxidianhua.png " alt=""></i>
+                        <input name="username" type="text" id="username" size="16" placeholder="联系电话（选填）" datatype="*"
+                            sucmsg=" " nullmsg="请填写信息！" class="UserName">
+                    </div>
+                    <div><i><img src="../imgs/youxiang.png " alt=""></i>
+                        <input name="username" type="text" id="username" size="16" placeholder="电子邮箱（选填）" datatype="*"
+                            sucmsg=" " nullmsg="请填写信息！" class="UserName">
+                    </div>
+                    <div class="question"><i><img src="../imgs/wenti.png " alt=""></i>
+                        <input name="username" type="text" id="username" size="16" placeholder="反馈问题（必填）" datatype="*"
+                            sucmsg=" " nullmsg="请填写信息！" class="UserName">
+                    </div>
+                    <div class="content ">
+                        <textarea name="message-content" id="message-content" cols="45" rows="11">留言内容（必填）</textarea>
+                    </div>
+                    <div class="proof"><i><img src="../imgs/yanzheng.png " alt=""></i>
+                        <input id="txtCode" name="txtCode" type="text" class="input small Validform_error" datatype="*"
+                            sucmsg=" " placeholder="验证码" nullmsg="请填写信息！">
+                        <span><img id="proof-photo" src="../imgs/yanzhengma.png" alt=""></span>
+                    </div>
+                    <div id="apply">
+                        <input type="submit" class="btn btn-inverse" value="申请反馈" id="btnSubmit" name="btnSubmit">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-xs-12 aside-right" style="margin-bottom: 20px;">
+                <div class="focusMe">
+                    <h4><i class="fa fa-heart" style="color:orangered" aria-hidden="true"></i>关注我 <small>focus
+                            me</small></h4>
+                    <section class="sect">
+                        <a href="#" class="iconbtn fa fa-download" style="background-color: #3bb9d8;"></a>
+                        <a href="#" class="iconbtn fa fa-shopping-cart" style="background-color: #ec6d34;"></a>
+                        <a href="#" class="iconbtn fa fa-share-alt" style="background-color: #a0ed36;"></a>
+                        <a href="#" class="iconbtn fa fa-envelope" style="background-color: #39d39f;"></a><br>
+                    </section>
+                    <section class="sect">
+                        <span>资源下载</span>
+                        <span>唯爱商城</span>
+                        <span>分享本站</span>
+                        <span>联系唯爱</span>
+                    </section>
+                </div>
+                <div class="col-md-12 col-xs-12" style="background-color: rgba(255,255,255,0.5);">
+                    <div class="index-login">
+                        <div class="logo">
+                            <div class="card">
+                                <div class="front">
+                                    <img src="../imgs/bg6.jpg" alt="">
+                                </div>
+                                <div class="back">
+                                    <div class="back-content middle">
+                                        <h3>唯爱</h3>
+                                        <span><i class="fa fa-heart" aria-hidden="true"
+                                                style="color:orangered;"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="login">
+                            <a href="">登录</a>
+                            <a href="">注册</a>
+                        </div>
+                        <p>你 若 盛 开，蝴 蝶 自 来</p>
+                    </div>
+                    <div class="index-data">
+                        <ul>
+                            <li><strong>521</strong><br><span>运行天数</span></li>
+                            <li><strong>13</strong><br><span>近日访客</span></li>
+                            <li><strong>215</strong><br><span>文章数量</span></li>
+                        </ul>
+                    </div>
+                    <div class="search">
+                        <input type="text" placeholder="输入关键字搜索">
+                        <i class="fa fa-search" style="color:orangered;" aria-hidden="true"></i>
+                    </div>
+                    <div class="recentNew">
+                        <h4><i class="fa fa-bell" style="color:orangered" aria-hidden="true"></i></i>最近更新
+                            <small>recently new</small></h4>
+                        <ul>
+                            <li><i class="fa fa-book" style="color:orangered" aria-hidden="true"></i><span>
+                                    <font>分类阅读</font>08-17
+                                </span>个人爱好介绍</li>
+                            <li><i class="fa fa-heartbeat" style="color:orangered" aria-hidden="true"></i><span>
+                                    <font>唯爱物语</font>08-16
+                                </span>提升生活质量</li>
+                            <li><i class="fa fa-cubes" style="color:orangered" aria-hidden="true"></i><span>
+                                    <font>素材宝库</font>08-14
+                                </span>择偶标准</li>
+                            <li><i class="fa fa-camera-retro" style="color:orangered" aria-hidden="true"></i><span>
+                                    <font>美图欣赏</font>08-11
+                                </span>爱的誓言</li>
+                        </ul>
+                    </div>
+                    <div class="saying">
+                        <h4><i class="fa fa-coffee" style="color:orangered" aria-hidden="true"></i>说说 <small>say
+                                say</small></h4>
+                        <ul>
+                            <li>
+                                <div><span>08-17 </span><b>提升生活质量</b></div>
+                            </li>
+                            <li>
+                                <div><span>08-10 </span><b>一个人时请坚强</b></div>
+                            </li>
+                            <li>
+                                <div><span>08-10 </span><b>两个人时请包容</b></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="hotSearch">
+                        <h4><i class="fa fa-fire" style="color:orangered" aria-hidden="true"></i>热搜 <small>hot
+                                search</small></h4>
+                        <ul>
+                            <li>
+                                <div class="hs-container">
+                                    <div class="circle"></div>
+                                    <h5>醉卧沙场君莫笑</h5>
+                                    <p>诗的最末两句“醉卧沙场君莫笑，古来征战几人回。”顺着前两句的诗意来看应当是写筵席上的畅饮和劝酒，这样理解的话，全诗无论是在诗意还是诗境上也就自然而然地融会贯通了，过去曾有人认为这两句“作旷达语，倍觉悲痛”。还有人说：“故作豪饮之词，然悲感已极”。话虽不同，但都离不开一个“悲”字。后来更有用低沉、悲凉、感伤、反战等等词语来概括这首诗的思想感情的，依据也是三四两句，特别是末句。“古来征战几人回”，显然是一种夸张的说法。清代施补华说这两句诗：“作悲伤语读便浅，作谐谑语读便妙，在学人领悟。”
+                                    </p>
+                                    <a href=""><i class="fa fa-calculator" aria-hidden="true"
+                                            style="color:orangered"></i>08-12</a>
+                                    <a href=""><i class="fa fa-thumbs-up" aria-hidden="true"
+                                            style="color:orangered"></i>520</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="hs-container">
+                                    <div class="circle"></div>
+                                    <h5>醉卧沙场君莫笑</h5>
+                                    <p>诗的最末两句“醉卧沙场君莫笑，古来征战几人回。”顺着前两句的诗意来看应当是写筵席上的畅饮和劝酒，这样理解的话，全诗无论是在诗意还是诗境上也就自然而然地融会贯通了，过去曾有人认为这两句“作旷达语，倍觉悲痛”。还有人说：“故作豪饮之词，然悲感已极”。话虽不同，但都离不开一个“悲”字。后来更有用低沉、悲凉、感伤、反战等等词语来概括这首诗的思想感情的，依据也是三四两句，特别是末句。“古来征战几人回”，显然是一种夸张的说法。清代施补华说这两句诗：“作悲伤语读便浅，作谐谑语读便妙，在学人领悟。”
+                                    </p>
+                                    <a href=""><i class="fa fa-calculator" aria-hidden="true"
+                                            style="color:orangered"></i>08-12</a>
+                                    <a href=""><i class="fa fa-thumbs-up" aria-hidden="true"
+                                            style="color:orangered"></i>520</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="hs-container">
+                                    <div class="circle"></div>
+                                    <h5>醉卧沙场君莫笑</h5>
+                                    <p>诗的最末两句“醉卧沙场君莫笑，古来征战几人回。”顺着前两句的诗意来看应当是写筵席上的畅饮和劝酒，这样理解的话，全诗无论是在诗意还是诗境上也就自然而然地融会贯通了，过去曾有人认为这两句“作旷达语，倍觉悲痛”。还有人说：“故作豪饮之词，然悲感已极”。话虽不同，但都离不开一个“悲”字。后来更有用低沉、悲凉、感伤、反战等等词语来概括这首诗的思想感情的，依据也是三四两句，特别是末句。“古来征战几人回”，显然是一种夸张的说法。清代施补华说这两句诗：“作悲伤语读便浅，作谐谑语读便妙，在学人领悟。”
+                                    </p>
+                                    <a href=""><i class="fa fa-calculator" aria-hidden="true"
+                                            style="color:orangered"></i>08-12</a>
+                                    <a href=""><i class="fa fa-thumbs-up" aria-hidden="true"
+                                            style="color:orangered"></i>520</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pop-Rank">
+                        <div class="changeOver">
+                            <a href="javascript:void(0);" class="love sanjiao"><span><i class="fa fa-heartbeat"
+                                        aria-hidden="true" style="color:orangered"></i>
+                                    狂热榜</span></a>
+                            <a href="javascript:void(0);" class="pop sanjiao"><span><i class="fa fa-fire"
+                                        aria-hidden="true" style="color:orangered"></i>
+                                    魅力榜</span></a>
+                        </div>
+                        <div class="love-rank loveRank">
+                            <ul>
+                                <li><span>1</span><a href="">涂山红红</a><b>(520)</b></li>
+                                <li><span>2</span><a href="">涂山雅雅</a><b>(510)</b></li>
+                                <li><span>3</span><a href="">涂山容容</a><b>(500)</b></li>
+                                <li><span>4</span><a href="">涂山苏苏</a><b>(490)</b></li>
+                                <li><span>5</span><a href="">东方淮竹</a><b>(480)</b></li>
+                            </ul>
+                        </div>
+                        <div class="love-rank popRank">
+                            <ul>
+                                <li><span>1</span><a href="">东方秦兰</a><b>(520)</b></li>
+                                <li><span>2</span><a href="">东方月初</a><b>(510)</b></li>
+                                <li><span>3</span><a href="">王权霸业</a><b>(500)</b></li>
+                                <li><span>4</span><a href="">王权醉</a><b>(490)</b></li>
+                                <li><span>5</span><a href="">王权富贵</a><b>(480)</b></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="interact">
+                        <h4><i class="fa fa-comment" style="color:orangered" aria-hidden="true"></i>互动消息
+                            <small>interact</small></h4>
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object" src="../imgs/bg1.jpg" alt="..."
+                                        style="width: 60px;height:60px">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <div class="col-md-5 col-xs-5"><i class="fa fa-user" aria-hidden="true"
+                                        style="color:orangered"></i>往昔</div>
+                                <div class="col-md-offset-0 col-md-7 col-xs-offset-1 col-xs-6 time">2019-06-12</div>
+                                <a href="#" class="msg">彼爱2019-04-21说：
+                                    在爱情中你要搞清楚，是你喜欢人家，不是人家喜欢你。既然主动了，就算受了天大的委屈，也不能怪任何人，只怪你有本事喜欢人家，没本事让人家喜欢你。</a>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object" src="../imgs/bg1.jpg" alt="..."
+                                        style="width: 60px;height:60px">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <div class="col-md-5 col-xs-5"><i class="fa fa-user" aria-hidden="true"
+                                        style="color:orangered"></i>往昔</div>
+                                <div class="col-md-offset-0 col-md-7 col-xs-offset-1 col-xs-6 time">2019-06-12</div>
+                                <a href="#" class="msg">彼爱2019-04-21说：
+                                    在爱情中你要搞清楚，是你喜欢人家，不是人家喜欢你。既然主动了，就算受了天大的委屈，也不能怪任何人，只怪你有本事喜欢人家，没本事让人家喜欢你。</a>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object" src="../imgs/bg1.jpg" alt="..."
+                                        style="width: 60px;height:60px">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <div class="col-md-5 col-xs-5"><i class="fa fa-user" aria-hidden="true"
+                                        style="color:orangered"></i>往昔</div>
+                                <div class="col-md-offset-0 col-md-7 col-xs-offset-1 col-xs-6 time">2019-06-12</div>
+                                <a href="#" class="msg">彼爱2019-04-21说：
+                                    在爱情中你要搞清楚，是你喜欢人家，不是人家喜欢你。既然主动了，就算受了天大的委屈，也不能怪任何人，只怪你有本事喜欢人家，没本事让人家喜欢你。</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="gotop" style="z-index: 20"><i class="fa fa-chevron-up" style="color:#fff"
+            aria-hidden="true"></i></a>
+    <!-- 尾栏 -->
+    <footer id="myfooter">
+        <div class="container-fluid">
+            <div class="row" id="footer-top">
+                <div id="footer-big">
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12" id="footer-aboutsearch">
+                        <h4>热搜排行</h4>
+                        <div class="footer-search">
+                            <ul>
+                                <li><button class="btn btn-danger">1</button><a href="#">遇见爱情</a> <b>(33)</b></li>
+                                <li><button class="btn btn-info">2</button><a href="#">今生爱，前世债</a><b>(172)</b></li>
+                                <li><button class="btn btn-warning">3</button><a href="#">真爱是什么</a><b>(61)</b></li>
+                                <li><button class="btn btn-success">4</button><a href="#">谁输了爱情这盘棋</a><b>(42)</b> </li>
+                                <li><button class="btn btn-primary">5</button><a href="#">你的宿命</a> <b>(32)</b></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12" id="footer-abouthotspot">
+                        <h4>微语热点</h4>
+
+                        <div class="footer-hotspot">
+                            <ul>
+                                <li>
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <a href="#">
+                                                <img class="media-object" src="../imgs/huangguan.png" alt="...">
+                                            </a>
+                                        </div>
+                                        <div class="media-body">
+                                            <h4 class="media-heading">分寸</h4>
+                                            <a
+                                                href="#">人，不能做得太假，假了，难以交心；利，不能看得太重，重了，难以明志；情，不能陷得太深，深了，难以自拔；话，不能说得太满，满了，难以圆场；事，不能做得太绝，绝了，难以进退；梦，不能做得太久，久了，难以清醒；调，不能定得太高，高了，难以合声；世，不能看得太清，清了，难以作为。</a>
+                                        </div>
+                                    </div>
+                                <li>
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <a href="#">
+                                                <img class="media-object" src="../imgs/huangguan1.png" alt="...">
+                                            </a>
+                                        </div>
+                                        <div class="media-body">
+                                            <h4 class="media-heading">爱情不能怪别人</h4>
+                                            <a href="#">彼爱2019-04-21说：
+                                                在爱情中你要搞清楚，是你喜欢人家，不是人家喜欢你。既然主动了，就算受了天大的委屈，也不能怪任何人，只怪你有本事喜欢人家，没本事让人家喜欢你。</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <a href="#">
+                                                <img class="media-object" src="../imgs/huangguan2.png" alt="...">
+                                            </a>
+                                        </div>
+                                        <div class="media-body">
+                                            <h4 class="media-heading">爱情公式</h4>
+                                            <a href="#">
+                                                公式代表的含义：F代表自己对对方的好感，Ch代表对方的魅力，P代表看到对方时性激素的分泌量，表现为自己的兴奋程度，C代表自己的信心，I代表亲密程度，SI代表自我形象。按照从1到10的顺序，分别为自己的各个情况打分，然后代入公式即可。</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 hidden-md hidden-sm hidden-xs">
+                        <div class="footer-aboutfame">
+                            <h4>名气排行榜</h4>
+                            <div class="footer-fame">
+                                <ul>
+                                    <li class="col-md-3">
+                                        <a href="javascript:void(0);"><img class="footer-mytooltip" title="我爱你，用我的良心"
+                                                src="../imgs/4.jpg" alt=""> </a>
+                                    </li>
+                                    <li class="col-md-3">
+                                        <a href="javascript:void(0);"><img class="footer-mytooltip" title="我爱你，用我的良心"
+                                                src="../imgs/4.jpg" alt=""> </a>
+                                    </li>
+                                    <li class="col-md-3">
+                                        <a href="javascript:void(0);"><img class="footer-mytooltip" title="我爱你，用我的良心"
+                                                src="../imgs/4.jpg" alt=""> </a>
+                                    </li>
+                                    <li class="col-md-3">
+                                        <a href="javascript:void(0);"><img class="footer-mytooltip" title="我爱你，用我的良心"
+                                                src="../imgs/4.jpg" alt=""> </a>
+                                    </li>
+                                    <li class="col-md-3">
+                                        <a href="javascript:void(0);"><img class="footer-mytooltip" title="我爱你，用我的良心"
+                                                src="../imgs/4.jpg" alt=""> </a>
+                                    </li>
+                                    <li class="col-md-3">
+                                        <a href="javascript:void(0);"><img class="footer-mytooltip" title="我爱你，用我的良心"
+                                                src="../imgs/4.jpg" alt=""> </a>
+                                    </li>
+                                    <li class="col-md-3">
+                                        <a href="javascript:void(0);"><img class="footer-mytooltip" title="我爱你，用我的良心"
+                                                src="../imgs/4.jpg" alt=""> </a>
+                                    </li>
+                                    <li class="col-md-3">
+                                        <a href="javascript:void(0);"><img class="footer-mytooltip" title="我爱你，用我的良心"
+                                                src="../imgs/4.jpg" alt=""> </a>
+                                    </li>
+                                    <li class="col-md-3">
+                                        <a href="javascript:void(0);"><img class="footer-mytooltip" title="我爱你，用我的良心"
+                                                src="../imgs/4.jpg" alt=""> </a>
+                                    </li>
+                                    <li class="col-md-3">
+                                        <a href="javascript:void(0);"><img class="footer-mytooltip" title="我爱你，用我的良心"
+                                                src="../imgs/4.jpg" alt=""> </a>
+                                    </li>
+                                    <li class="col-md-3">
+                                        <a href="javascript:void(0);"><img class="footer-mytooltip" title="我爱你，用我的良心"
+                                                src="../imgs/4.jpg" alt=""> </a>
+                                    </li>
+                                    <li class="col-md-3">
+                                        <a href="javascript:void(0);"><img class="footer-mytooltip" title="我爱你，用我的良心"
+                                                src="../imgs/4.jpg" alt=""> </a>
+                                    </li>
+                                    <li class="col-md-3">
+                                        <a href="javascript:void(0);"><img class="footer-mytooltip" title="我爱你，用我的良心"
+                                                src="../imgs/4.jpg" alt=""> </a>
+                                    </li>
+                                    <li class="col-md-3">
+                                        <a href="javascript:void(0);"><img class="footer-mytooltip" title="我爱你，用我的良心"
+                                                src="../imgs/4.jpg" alt=""> </a>
+                                    </li>
+                                    <li class="col-md-3">
+                                        <a href="javascript:void(0);"><img class="footer-mytooltip" title="我爱你，用我的良心"
+                                                src="../imgs/4.jpg" alt=""> </a>
+                                    </li>
+                                    <li class="col-md-3">
+                                        <a href="javascript:void(0);"><img class="footer-mytooltip" title="我爱你，用我的良心"
+                                                src="../imgs/4.jpg" alt=""> </a>
+                                    </li>
+                                    <!-- <span id="tankuang" style="display: none;"></span> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                        <div class="footer-aboutmap">
+                            <h4>网站地图</h4>
+                            <div class="footer-map">
+                                <ul>
+                                    <li class="col-xs-6"><span><i class="fa fa-eercast"
+                                                aria-hidden="true"></i>&nbsp;动态：</span>我的世界</li>
+                                    <li class="col-xs-6"><span><i class="fa fa-magic"
+                                                aria-hidden="true"></i>&nbsp;热搜：</span>为你爆灯</li>
+                                    <li class="col-xs-6"><span><i class="fa fa-heart" aria-hidden="true"></i>&nbsp;pick
+                                            ：</span>异性缘排行</li>
+                                    <li class="col-xs-6"><span><i class="fa fa-diamond"
+                                                aria-hidden="true"></i>&nbsp;邂逅：</span>完美配对</li>
+                                    <li class="col-xs-6"><span><i class="fa fa-question-circle-o"
+                                                aria-hidden="true"></i> </i>&nbsp;问问：</span>个性留言</li>
+                                    <li class="col-xs-6"><span><i class="fa fa-search" aria-hidden="true"></i>
+                                            &nbsp;找找：</span>声光画影</li>
+                                    <li class="col-xs-6"><span><i class="fa fa-handshake-o"
+                                                aria-hidden="true"></i>&nbsp;想想：</span>关于唯爱</li>
+                                    <li class="col-xs-6"><span><i class="fa fa-gratipay" aria-hidden="true"></i>
+                                            &nbsp;唯爱：</span>onlylove.cn</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="footer-bottom">
+                <div>
+                    <span>copyright &copy;2018-2019 唯爱(onlylove) by onlylove.cn </span>
+                    <span>苏PIC备1900328号-1</span>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </footer>
+
+
+    <script src="../plugins/js/jquery-3.4.1.min.js"></script>
+    <script src="../plugins/js/bootstrap.js"></script>
+    <script src="../js/index.js"></script>
+
+</body>
+
+</html>
